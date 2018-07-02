@@ -1,0 +1,41 @@
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+
+  <property>
+     <name>hbase.zookeeper.quorum</name>
+     <value>hbase-docker</value>
+  </property>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>file:////data/hbase</value>
+  </property>
+
+  <property>
+    <name>hbase.master.info.bindAddress</name>
+    <value>hbase-docker</value>
+  </property>
+
+  <property>
+    <name>hbase.regionserver.info.bindAddress</name>
+    <value>hbase-docker</value>
+  </property>
+
+  
+<property>
+  <name>hive.server2.thrift.min.worker.threads</name>
+  <value>10</value>
+  <description>Minimum number of Thrift worker threads</description>
+</property>
+<property>
+  <name>hive.server2.thrift.max.worker.threads</name>
+  <value>200</value>
+  <description>Maximum number of Thrift worker threads</description>
+</property>
+<property>
+  <name>hive.zookeeper.session.timeout</name>
+  <value>60000</value>
+  <description>Zookeeper client's session timeout. The client is disconnected, and as a result, all locks released, if a heartbeat is not sent in the timeout.</description>
+</property>
+  
+  
+</configuration>
